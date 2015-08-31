@@ -1,0 +1,11 @@
+body{
+	margin: 20px;
+	background-color: grey;
+}
+thead{
+	width: 10%;
+}
+table{
+   background-color: white;
+   border-color: black;
+}

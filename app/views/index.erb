@@ -1,0 +1,61 @@
+<head>
+  <title>Feedback demo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+	<form action='/response' method="POST">
+		<table class="table table-bordered table-hover">
+			<thead>
+				<tr>
+					<th class="col-xs-2"></th>
+					<th class="col-xs-2">Strongly disagree</th>
+					<th class="col-xs-2">Disagree</th>
+					<th class="col-xs-2">Neutral</th>
+					<th class="col-xs-2">Agree</th>
+					<th class="col-xs-2">Strongly agree</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="col-xs-2">**question#1</td>
+					<td class="col-xs-2"><input type="radio" name="one" value="0" required></td>
+					<td class="col-xs-2"><input type="radio" name="one" value="1"></td>
+					<td class="col-xs-2"><input type="radio" name="one" value="2"></td>
+					<td class="col-xs-2"><input type="radio" name="one" value="3"></td>
+					<td class="col-xs-2"><input type="radio" name="one" value="4"></td>
+				</tr>
+				<tr>
+					<td class="col-xs-2">**question#2</td>
+					<td class="col-xs-2"><input type="radio" name="two" value="0" required></td>
+					<td class="col-xs-2"><input type="radio" name="two" value="1"></td>
+					<td class="col-xs-2"><input type="radio" name="two" value="2"></td>
+					<td class="col-xs-2"><input type="radio" name="two" value="3"></td>
+					<td class="col-xs-2"><input type="radio" name="two" value="4"></td>
+				</tr>
+				<tr>
+					<td class="col-xs-2">**question#3</td>
+					<td class="col-xs-2"><input type="radio" name="three" value="0"></td>
+					<td class="col-xs-2"><input type="radio" name="three" value="1" required></td>
+					<td class="col-xs-2"><input type="radio" name="three" value="2"></td>
+					<td class="col-xs-2"><input type="radio" name="three" value="3"></td>
+					<td class="col-xs-2"><input type="radio" name="three" value="4"></td>
+				</tr>
+				<tr>
+					<td class="col-xs-2">**question#4</td>
+					<td class="col-xs-2"><input type="radio" name="four" value="0" required></td>
+					<td class="col-xs-2"><input type="radio" name="four" value="1"></td>
+					<td class="col-xs-2"><input type="radio" name="four" value="2"></td>
+					<td class="col-xs-2"><input type="radio" name="four" value="3"></td>
+					<td class="col-xs-2"><input type="radio" name="four" value="4"></td>
+				</tr>
+			</tbody>
+
+		</table>
+		<input type="submit" value="submit" class="btn btn-info">
+	</form>
+</body>
