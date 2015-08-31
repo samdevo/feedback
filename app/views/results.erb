@@ -11,10 +11,12 @@
 <link rel="stylesheet" type="text/css" href="/css/results.css">
 </head>
 <body>
+	<style>
+
+	</style>
 <%@all_responses.where({:employer_id => 1}).each do |r|%>
 <!-- <img src="http://images.clipartpanda.com/dot-com-clipart-dot-clipart-8e5a5a7ed9284c00a7bc45f2ad1ea8e8VPJ1OJ.png" height="20px" width="20px" coords="100, 100, 100"> -->
-<map name="planetmap">
-  <area class="area" shape="circle" coords="<%=r.x%>,<%=r.y%>,15" alt="dot">
-</map>
+<img  class="<%=r.x%><%=r.y%>" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Locator_Dot.svg/2000px-Locator_Dot.svg.png" height="20px" width="20px">
+</div>
 <%end%>
 </body>
