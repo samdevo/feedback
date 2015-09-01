@@ -14,9 +14,14 @@ configure do
   post '/response' do
   	x = params[:one].to_i + params[:two].to_i
   	y = params[:three].to_i + params[:four].to_i
-    x *= 100
-    y *= 100
-    x -= 7
+    x *= 40
+    y *= 40
+    x += rand(40)
+    y = 320 - y
+    y += rand(40)
+    y += 15
+    x += 15
+
   	@new_response = Response.create({:employer_id => Employer.where({:name => "Sam Devorsetz"}).first.id, :x => x, :y => y})
     @new_response.save!
   	redirect '/response'

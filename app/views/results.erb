@@ -11,12 +11,19 @@
 <link rel="stylesheet" type="text/css" href="/css/results.css">
 </head>
 <body>
-	<style>
-
-	</style>
+	<img src="//c1.staticflickr.com/1/726/21052126822_dd43df1dc9_z.jpg" style="padding:7px;">
 <%@all_responses.where({:employer_id => 1}).each do |r|%>
+<style>
+.<%=r.x%><%=r.y%>{
+	position: absolute;
+	top: <%=r.y%>;
+	left: <%=r.y%>;
+}
+
+</style>
+<!-- <div class="<%=r.x%><%=r.y%>"> -->
 <!-- <img src="http://images.clipartpanda.com/dot-com-clipart-dot-clipart-8e5a5a7ed9284c00a7bc45f2ad1ea8e8VPJ1OJ.png" height="20px" width="20px" coords="100, 100, 100"> -->
-<img  class="<%=r.x%><%=r.y%>" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Locator_Dot.svg/2000px-Locator_Dot.svg.png" height="20px" width="20px">
-</div>
+<img style="position: absolute; top:<%=r.y%>; left:<%=r.x%>" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Locator_Dot.svg/2000px-Locator_Dot.svg.png" height="20px" width="20px">
+<!-- </div> -->
 <%end%>
 </body>
