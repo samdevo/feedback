@@ -7,8 +7,7 @@ gem "rake"
 gem "bcrypt"
 gem "mailgun"
 gem "twilio-ruby"
-gem "shotgun"
-gem "pry"
+gem 'pg'
 # gem "pg"
 
 group :development do
